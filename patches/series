@@ -1,3 +1,4 @@
+a2d2-patchset/rename-debugger-statement.patch
 inox-patchset/fix-cfi-failures-with-unbundled-libxml.patch
 ungoogled-chromium/windows/windows-disable-reorder-fix-linking.patch
 ungoogled-chromium/windows/windows-disable-win-build-output.patch

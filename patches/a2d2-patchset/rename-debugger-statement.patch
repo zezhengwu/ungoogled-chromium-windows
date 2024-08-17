@@ -1,0 +1,44 @@
+--- a/v8/src/parsing/keywords-gen.h
++++ b/v8/src/parsing/keywords-gen.h
+@@ -117,7 +117,7 @@ static const struct PerfectKeywordHashTableEntry kPerfectKeywordHashTable[128] =
+      {"throw", Token::kThrow},
+      {"delete", Token::kDelete},
+      {"default", Token::kDefault},
+-     {"debugger", Token::kDebugger},
++     {"debugger20240818", Token::kDebugger},
+      {"new", Token::kNew},
+      {"case", Token::kCase},
+      {"catch", Token::kCatch},
+--- a/v8/src/parsing/keywords.txt
++++ b/v8/src/parsing/keywords.txt
+@@ -24,7 +24,7 @@ catch, Token::kCatch
+ class, Token::kClass
+ const, Token::kConst
+ continue, Token::kContinue
+-debugger, Token::kDebugger
++debugger20240818, Token::kDebugger
+ default, Token::kDefault
+ delete, Token::kDelete
+ do, Token::kDo
+--- a/v8/src/parsing/scanner-inl.h
++++ b/v8/src/parsing/scanner-inl.h
+@@ -29,7 +29,7 @@ namespace internal {
+   KEYWORD("const", Token::kConst)                         \
+   KEYWORD("continue", Token::kContinue)                   \
+   KEYWORD_GROUP('d')                                      \
+-  KEYWORD("debugger", Token::kDebugger)                   \
++  KEYWORD("debugger20240818", Token::kDebugger)           \
+   KEYWORD("default", Token::kDefault)                     \
+   KEYWORD("delete", Token::kDelete)                       \
+   KEYWORD("do", Token::kDo)                               \
+--- a/v8/src/parsing/token.h
++++ b/v8/src/parsing/token.h
+@@ -137,7 +137,7 @@ namespace internal {
+   K(kCase, "case", 0)                                                         \
+   K(kCatch, "catch", 0)                                                       \
+   K(kContinue, "continue", 0)                                                 \
+-  K(kDebugger, "debugger", 0)                                                 \
++  K(kDebugger, "debugger20240818", 0)                                         \
+   K(kDefault, "default", 0)                                                   \
+   /* kDelete */                                                               \
+   K(kDo, "do", 0)                                                             \
